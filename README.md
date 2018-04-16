@@ -3,6 +3,10 @@
 
 [View demo](https://jimjimliu.github.io/10-question-quiz-game/)
 
+## Introduction
+The app is an web quiz game, which gives you true false questions.
+Displays answers, scores, explanations at the end of the game.
+One can re-start the game at the end.
 
 ## Get Started
 
