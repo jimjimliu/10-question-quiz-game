@@ -1,7 +1,7 @@
 # 10 question quiz game1.0 based on react-redux
 
 
-[View demo]()
+[View demo](https://jimjimliu.github.io/10-question-quiz-game/)
 
 
 ## Get Started
