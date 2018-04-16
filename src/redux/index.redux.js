@@ -6,9 +6,13 @@ export function reducer(state, action) {
         case 'NEXT':
             state.questionId = state.questionId+1;
             state.counter += 1;
-			state.category = questions[state.counter].category;
-            state.question = questions[state.counter].question;
-            state.answerChoice = questions[state.counter].choice;//set each choice's score i.e. true is 0, false is 1;
+			state.category = questions[state.counter].category; //state.category="sport";
+            state.question = questions[state.counter].question; 
+			/*
+			set each choice's score i.e. true is 0, false is 1;
+			state.answerChoice = [{score:0, choice:'true'}, {score:1, choice: "false"}]
+			*/
+            state.answerChoice = questions[state.counter].choice;
             return state
         
         case 'SCORE':
@@ -26,6 +30,9 @@ export function reducer(state, action) {
             return state
             
         case 'MARK':
+			/*
+			For component to render the font style; questions that incorrectly answered will be displayed in red;
+			*/
             state.feedback[state.counter].fontColor = 'red'
             return state
             
@@ -49,7 +56,7 @@ export function reducer(state, action) {
 }
 
 /*
-return an array [{question+correct answer, color to display the question}, {...}
+return an array [{question id, question+correct answer, color to display the question, explanation}, {...}]
 */
 function feedback(){
     var output = [];
