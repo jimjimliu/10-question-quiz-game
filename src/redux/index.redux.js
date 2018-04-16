@@ -59,6 +59,7 @@ function feedback(){
         var item = questions[i];
       
         var array = {
+			questionId: i+1,
             feedback: item.question+" Correct answer: "+item.answer,
 			explanation: item.explanation,
             fontColor: 'black'

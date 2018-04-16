@@ -10,6 +10,7 @@ function renderFeedBack(key) {
             feedBack = {key.feedback}
 			explanation = {key.explanation}
 			fontStyle = {key.fontColor}
+			questionId = {key.questionId}
           />
         );
       }
@@ -17,7 +18,7 @@ function renderFeedBack(key) {
 function FeedBack(props) {
 	return (
 		<div>
-	  		Question: <strong style={{color:props.fontStyle}}>{props.feedBack}</strong>
+	  		Question{props.questionId}: <strong style={{color:props.fontStyle}}>{props.feedBack}</strong>
 			<p>Do you know: {props.explanation}</p>
 			<p>-------------------------------------------------------------</p>
 	    </div>
