@@ -1,10 +1,13 @@
 {
+    "homepage": "http://jimjimliu.github.io/10-question-quiz-game"
   "name": "quiz-game-react",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "junhan",
