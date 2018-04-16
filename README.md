@@ -1,4 +1,4 @@
-﻿# 10 question quiz game based on react-redux 1.0
+# 10 question quiz game1.0 based on react-redux
 
 
 [View demo]()
