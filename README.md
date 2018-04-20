@@ -41,9 +41,7 @@ Implemented using react-redux. Included a light weight redux that includes neces
 > is negligible. Better solution would be using context OR using
 > provider+connect for components to fetch states more easily, states do
 > not need to be passed through each intermediate components.
-> Quiz-game-react2.0 uses provider+connect, but with there is an small
-> issue in 'connect' part, so it is not runnable for now. To be fixed in
-> the future.
+> Quiz-game-react2.0 uses provider+connect, to be posted.
 
 ## Notes for me
 For this app, in terms of the scale, there are several choices:
