@@ -43,7 +43,7 @@ Implemented using react-redux. Included a light weight redux that includes neces
 > not need to be passed through each intermediate components.
 > Quiz-game-react2.0 uses provider+connect, to be posted.
 
-## Notes for me
+## Notes
 For this app, in terms of the scale, there are several choices:
 1, develop without redux, hanle states within react components. abstract UI layer and state management intertwined together, once scale groups, logic becomes unclear. Needs high level state management.
 2, include lightweight redux, handle all state changes in reducer.  results in lightweight components. All state changes included in reducer. easy to debug and evolve
